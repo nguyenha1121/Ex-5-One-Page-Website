@@ -4,6 +4,12 @@
 // Base Styles
 @import 'slices/base.less';
 
+//colors
+@clbut:#fcac45;
+
+
+
+
 //font
 
 
@@ -14,7 +20,12 @@
 	font-size: 24px;
 }
 
-
+.f44{
+	font-size: 44px;
+}
+.f16{
+	font-size: 16px;
+}
 
 .upcase{
 	text-transform: uppercase;
@@ -29,14 +40,66 @@
 	clear:both;
 }
 .home{
-	height: 650px;
+	height: 450px;
 	width: auto;
 	background: #000;
 	>div{
+		position: relative;
 		text-align: center;
-		p{
-
+		p.p1{
+			margin-top:150px;
+			span{
+				color: @clbut;
+			}
+		}
+		p.p2{
 
 		}
+		button{
+			margin-top:150px;
+			
+			width: 40px;
+			height: 40px;
+			border: 0.5px solid #fff;
+			border-radius: 20px;
+			background: rgba(0, 0, 0, 0.5) ;
+			i{	
+				color: #ffffff;
+			}
+		}
 	}
+}
+
+.about{
+
+}
+.meetourteam{
+	>div{
+		>div{
+			text-align: center;
+		}
+	}
+}
+//owl css
+#owl-demo .item{
+  background: #3fbf79;
+  padding: 30px 0px;
+  margin: 10px;
+  color: #FFF;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+}
+.customNavigation{
+  text-align: center;
+}
+//use styles below to disable ugly selection
+.customNavigation a{
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
