@@ -1,5 +1,5 @@
 //Bootstrap
-// @import 'bootstrap/bootstrap';
+@import 'bootstrap/bootstrap';
 
 // Base Styles
 @import 'slices/base.less';
@@ -12,6 +12,10 @@ p{
 	margin-top: 13px !important;
 }
 
+section{
+	padding-bottom: 100px;
+	padding-top: 100px;
+}
 ul{
 	list-style-type: none;
 }
@@ -146,6 +150,7 @@ ul{
 	font-size: 24px;
 }
 .f30{font-size: 30px;}
+.f34{font-size: 34px;}
 .f40{
 	font-size: 40px;
 }
@@ -177,7 +182,7 @@ ul{
 		position: relative;
 		text-align: center;
 		p.p1{
-			margin-top:150px;
+			margin-top:100px!important;
 			span{
 				color: @clbut;
 			}
@@ -186,11 +191,11 @@ ul{
 
 		}
 		button{
-			margin-top:150px;
+			margin-top:115px;
 			
 			width: 40px;
 			height: 40px;
-			border: 0.5px solid #fff;
+			border: 0.5px solid #ffffff;
 			border-radius: 20px;
 			background: rgba(0, 0, 0, 0.5) ;
 			i{	
@@ -200,10 +205,25 @@ ul{
 	}
 }
 
-.about{
+.c3{
+	color: #c3c3c3;
+}
 
+.about{
+	// margin-top: 100px;
+}
+
+.butwork{
+	background: #ffffff;
+	border:1px solid #636363;
+	margin-top: 30px;
+}
+.mt{
+	margin-top: 30px!important;
 }
 .meetourteam{
+	padding-top: 100px;
+	padding-bottom:100px;
 	background: @clbg;
 	>div{
 
@@ -213,7 +233,16 @@ ul{
 
 	}
 }
+
+.np{
+	margin: 0!important;
+}
+.cnn{
+	color: #636363;
+}
 .takealook{
+	padding-top: 100px;
+	padding-bottom: 100px;
 	>div{
 		>div{
 			text-align: center;
@@ -221,6 +250,17 @@ ul{
 		ul{
 			li{
 				text-align: center;
+				p{
+					text-align: center;
+					i{
+						width: 80px;
+						height: 80px;
+						border: 2px solid @clbut;
+						border-radius: 40px;
+						padding-top:17px;
+
+					}
+				}
 			}
 		}
 	}
@@ -236,15 +276,32 @@ ul{
 
 
 .someof{
-	height: 450px;
+	height: 500px;
+	padding-top:100px;
+	padding-bottom: 100px;
 	background: #222222;
 	>div{
 		>div{
 			text-align: center;
+			div.item{
+				padding:100px;
+
+			}
 		}
 
 	}
 }
+
+.owl-theme .owl-controls .owl-page span {
+	border-radius: 0;
+}
+.owl-page.active {
+	span{
+		background: @clbut!important;
+	}
+}
+
+
 .takeourwork{
 	>div{
 		>div{
@@ -308,11 +365,18 @@ ul{
 	position: relative;
 }
 .ourclient{
+	background: #222222;
+	height: 600px;
 	>div{
 		>div{
 			text-align: center;
 		}
 	}
+}
+
+p.op-r.f18.upcase{
+	margin-top: 100px!important;
+	margin-bottom: 40px;
 }
 
 .contact{
@@ -341,8 +405,10 @@ ul{
 							height: 160px;
 						}
 						button{
+							background: @clbut;
 							width: 100%;
 							height: 35px;
+							border: 0px;
 						}
 					}
 				}
@@ -387,13 +453,7 @@ footer{
 // 						}
 //owl css
 #owl-demo .item{
-  background: #3fbf79;
-  padding: 30px 0px;
-  margin: 10px;
-  color: #FFF;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
+ 
   text-align: center;
 }
 .customNavigation{
@@ -407,5 +467,16 @@ footer{
   -ms-user-select: none;
   user-select: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.void{
+
+	width: 100px;
+	height: 100px;
+	background: #d7d7d7;
+	margin: 0 auto;
+	border-radius: 50px;
+}
+.item{
+	text-align: center;
 }
 
