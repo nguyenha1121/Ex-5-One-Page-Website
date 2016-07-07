@@ -394,7 +394,11 @@
 
 // Default navbar
 .navbar-default {
-  background-color: @navbar-default-bg;
+  .navbar-toggle{
+    background: #c3c3c3;
+  }
+  color: #ffffff;
+  background-color: #111111;
   border-color: @navbar-default-border;
 
   .navbar-brand {
@@ -574,6 +578,7 @@
 
   // Darken the responsive nav toggle
   .navbar-toggle {
+    color: #fff;
     border-color: @navbar-inverse-toggle-border-color;
     &:hover,
     &:focus {
