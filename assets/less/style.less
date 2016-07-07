@@ -5,8 +5,16 @@
 // @import 'slices/base.less';
 
 //colors
+
 @clbut:#fcac45;
 @clbg:#070707;
+
+.c91{
+	color: #919191;
+}
+.c57{
+	color:#575757;
+}
 p{
 	margin-bottom: 5px !important;
 	margin-top: 13px !important;
@@ -144,6 +152,9 @@ font
 
 .f14{
 	font-size: 14px;
+}
+.f16{
+	font-size: 16px;
 }
 .f18{
 	font-size: 18px;
@@ -449,19 +460,19 @@ font
 
 }
 
-button.button.upcase.f18.op-sb.is-checked{
+button.button.f18.op-sb.is-checked{
 	border-top: 0px;
     border-left: 2px;
     border-bottom: 0;
     background: #fff;
 }
-button.button.upcase.f18.op-l{
+button.button.f18.op-l{
 	border-top: 0px;
     border-left: 2px;
     border-bottom: 0;
     background: #fff;
 }
-button.button.upcase.f18.op-sb {
+button.button.f18.op-sb {
     border-top: 0px;
     border-left: 2px;
     border-bottom: 0;
@@ -594,6 +605,9 @@ footer{
 
 
 @media (max-width:320px){
+	ul.row {
+	    padding: 0;
+	}
 	.f14{
 		font-size: 6px;
 	}
@@ -657,6 +671,23 @@ footer{
 			}
 		}
 	}
+	footer{
+		height: auto;
+		display: flex;
+		flex-direction:column;
+		>div{
+			>div{text-align: center;
+			
+				div#rss{
+					line-height: 80px;
+					color: #ffffff;
+					display: flex;
+					justify-content:flex-start;
+	}
+
+}
+}
+}
 
 }
 @media (max-width:1024px) and (min-width:321px){
@@ -722,6 +753,22 @@ footer{
 			}
 		}
 	}
+	footer{
+		height: auto;
+		display: flex;
+		flex-direction:column;
+		>div{
+			>div{
+				text-align: center;
+			
+				div#rss{
+					line-height: 80px;
+					color: #ffffff;
+					display: flex;
+					justify-content:flex-start;
+	}
 
-
+}
+}
+}
 }
