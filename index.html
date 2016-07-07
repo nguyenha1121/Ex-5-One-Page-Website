@@ -20,7 +20,10 @@
     <meta name="author" content="">
     <meta name="description" content="">
     <link rel="canonical" href="">
-
+    
+    <link rel='stylesheet' href='https://cdn.rawgit.com/alvarotrigo/fullPage.js/master/jquery.fullPage.css'>
+   
+    <script src='https://cdn.rawgit.com/alvarotrigo/fullPage.js/master/jquery.fullPage.min.js'></script>
 
     <link rel="stylesheet" type="text/css" href="OwlCarousel-master/owl-carousel/owl.theme.css">
     <link rel="stylesheet" type="text/css" href="OwlCarousel-master/owl-carousel/owl.carousel.css">
@@ -34,7 +37,7 @@
 </head>
 <body>
     <div class="allpage">
-      <div class="menu">
+      <div class="menus">
            <nav id="mainNav" class="navbar navbar-default navbar-custom  navbar-fixed-top ">
            <!-- navbar-fixed-top -->
             <div class="container">
@@ -48,27 +51,34 @@
 
                   <!-- Collect the nav links, forms, and other content for toggling -->
                   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                      <ul class="nav navbar-nav navbar-right">
+                      <ul class="ctnav nav navbar-nav navbar-right menuss">
                           <li class="hidden">
                               <a href="#page-top"></a>
+
                           </li>
-                          <li>
-                              <a class="upcase f14 page-scroll" href="#home">Home</a>
+                          <li data-menuanchor="pg1" class="active">
+                              <a class="op-b upcase f14 page-scroll" href="#home">Home</a>
+                              <div class="gach"><div class="g1"></div><div class="g2"></div></div>
                           </li>
-                          <li>
-                              <a class="upcase f14 page-scroll" href="#about">About</a>
+                          <li data-menuanchor="pg2">
+                              <a class="op-b upcase f14 page-scroll" href="#about">About</a>
+                              <div class="gach"><div class="g1"></div><div class="g2"></div></div>
                           </li>
-                          <li>
-                              <a class="upcase f14 page-scroll" href="#services">Services</a>
+                          <li data-menuanchor="pg3">
+                              <a class="op-b upcase f14 page-scroll" href="#services">Services</a>
+                              <div class="gach"><div class="g1"></div><div class="g2"></div></div>
                           </li>
-                          <li>
-                              <a class="upcase f14 page-scroll" href="#portfolio">Portfolio</a>
+                          <li data-menuanchor="pg4">
+                              <a class="op-b upcase f14 page-scroll" href="#portfolio">Portfolio</a>
+                              <div class="gach"><div class="g1"></div><div class="g2"></div></div>
                           </li>
-                          <li>
-                              <a class="upcase f14 page-scroll" href="#testimonials">Testimonials</a>
+                          <li data-menuanchor="pg5">
+                              <a class="op-b upcase f14 page-scroll" href="#testimonials">Testimonials</a>
+                              <div class="gach"><div class="g1"></div><div class="g2"></div></div>
                           </li>
-                          <li>
-                              <a class="upcase f14 page-scroll" href="#contact">Contact</a>
+                          <li data-menuanchor="pg6">
+                              <a class="op-b upcase f14 page-scroll" href="#contact">Contact</a>
+                              <div class="gach"><div class="g1"></div><div class="g2"></div></div>
                           </li>
                       </ul>
                   </div>
@@ -233,7 +243,7 @@
             </div>
             <div id="owl-2" class="owl-carousel owl-theme">
              <div class="item">
-                <p class="upcase f40 cn">
+                <p class="upcase f40 c3">
                   <span class="op-b">chanel </span>
                   <span class="op-li">Zara </span>
                   <span class="op-li">guerlain </span>
@@ -278,15 +288,15 @@
               <span class="col-md-2 upcase f18 op-sb">Filter by type</span>
                 <div class="col-md-10 button-group filters-button-group">
                   <button class="button upcase f18 op-sb" data-filter="*">All</button>
-                  <button class="button upcase f18 op-l" data-filter=".ws">Web design</button>
-                  <button class="button upcase f18 op-l" data-filter=".wp">Mobile design</button>
-                  <button class=" button upcase f18 op-l" data-filter=".ma">Photograpy</button>
+                  <button class="button upcase f18 op-l" data-filter=".wd">Web design</button>
+                  <button class="button upcase f18 op-l" data-filter=".ma">Mobile design</button>
+                  <button class=" button upcase f18 op-l" data-filter=".gp">Photograpy</button>
                 </div>
               </div>
               <p></p>
               <div class="row grid">
                     
-                    <div class="hv element-item col-md-3 " >
+                    <div class="hv element-item col-md-3 wd" >
                       <div class="father">
                         <img src="assets/img/filter1.png" alt="">
                         <div class="inner">
@@ -296,7 +306,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="hv element-item col-md-3 " >
+                    <div class="hv element-item col-md-3 wd" >
                       <div class="father">
                         <img src="assets/img/filter1.png" alt="">
                         <div class="inner">
@@ -306,7 +316,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="hv element-item col-md-3 " >
+                    <div class="hv element-item col-md-3 wd" >
                       <div class="father">
                         <img src="assets/img/filter1.png" alt="">
                         <div class="inner">
@@ -316,7 +326,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="hv element-item col-md-3 " >
+                    <div class="hv element-item col-md-3 wd" >
                       <div class="father">
                         <img src="assets/img/filter1.png" alt="">
                         <div class="inner">
@@ -326,7 +336,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="hv element-item col-md-3 " >
+                    <div class="hv element-item col-md-3 wd ma" >
                       <div class="father">
                         <img src="assets/img/filter1.png" alt="">
                         <div class="inner">
@@ -336,7 +346,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="hv element-item col-md-3 " >
+                    <div class="hv element-item col-md-3 ma" >
                       <div class="father">
                         <img src="assets/img/filter1.png" alt="">
                         <div class="inner">
@@ -346,7 +356,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="hv element-item col-md-3 " >
+                    <div class="hv element-item col-md-3 ma" >
                       <div class="father">
                         <img src="assets/img/filter1.png" alt="">
                         <div class="inner">
@@ -356,7 +366,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="hv element-item col-md-3 " >
+                    <div class="hv element-item col-md-3 ma gp" >
                       <div class="father">
                         <img src="assets/img/filter1.png" alt="">
                         <div class="inner">
@@ -366,7 +376,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="hv element-item col-md-3 " >
+                    <div class="hv element-item col-md-3 gp" >
                       <div class="father">
                         <img src="assets/img/filter1.png" alt="">
                         <div class="inner">
@@ -376,7 +386,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="hv element-item col-md-3 " >
+                    <div class="hv element-item col-md-3 gp" >
                       <div class="father">
                         <img src="assets/img/filter1.png" alt="">
                         <div class="inner">
@@ -386,7 +396,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="hv element-item col-md-3 " >
+                    <div class="hv element-item col-md-3 gp" >
                       <div class="father">
                         <img src="assets/img/filter1.png" alt="">
                         <div class="inner">
@@ -396,7 +406,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="hv element-item col-md-3 " >
+                    <div class="hv element-item col-md-3 gp" >
                       <div class="father">
                         <img src="assets/img/filter1.png" alt="">
                         <div class="inner">
@@ -493,11 +503,11 @@
           <div id="lss" class="col-md-6"><span class="op-r">ALL RIGHTS RESERVED. COPYRIGHT © 2014 SPIRIT8</span></div>
           <div id="rss" class="col-md-6">
             <span>
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-              <i class="fa fa-google-plus" aria-hidden="true"></i>
-              <i class="fa fa-linkedin" aria-hidden="true"></i>
-              <i class="fa fa-dribbble" aria-hidden="true"></i>
+              <i class="f18 fa fa-facebook" aria-hidden="true"></i>
+              <i class="f18 fa fa-twitter" aria-hidden="true"></i>
+              <i class="f18 fa fa-google-plus" aria-hidden="true"></i>
+              <i class="f18 fa fa-linkedin" aria-hidden="true"></i>
+              <i class="f18 fa fa-dribbble" aria-hidden="true"></i>
             </span>
           </div>
         </div>

@@ -2,7 +2,7 @@
 @import 'bootstrap/bootstrap';
 
 // Base Styles
-@import 'slices/base.less';
+// @import 'slices/base.less';
 
 //colors
 @clbut:#fcac45;
@@ -23,73 +23,73 @@ ul{
 
 @font-face{
 	font-family: 'op-b';
-	src:url("assets/font/OpenSans-Bold.ttf") fomrmat("trutype");
+	src : url("font/OpenSans-Bold.ttf") format("truetype");
 }
 
-// @font-face{
-// 	font-family: 'op-bi';
-// 	src:url("assets/font/OpenSans-BoldItalic.ttf") fomrmat("trutype");
-// }
+@font-face{
+	font-family: 'op-bi';
+	src:url("../assets/font/OpenSans-BoldItalic.ttf") format("truetype");
+}
 
 @font-face{
 	font-family: 'op-cb';
-	src:url("assets/font/OpenSans-CondBold.ttf") fomrmat("trutype");
+	src:url("../assets/font/OpenSans-CondBold.ttf") format("truetype");
 }
 
 @font-face{
 	font-family: 'op-cl';
-	src:url("assets/font/OpenSans-CondLight.ttf") fomrmat("trutype");
+	src:url("../assets/font/OpenSans-CondLight.ttf") format("truetype");
 }
 
 @font-face{
 	font-family: 'op-cli';
-	src:url("assets/font/OpenSans-CondLightItalic.tff") fomrmat("trutype");
+	src:url("../assets/font/OpenSans-CondLightItalic.ttf") format("truetype");
 }
 
 @font-face{
 	font-family: 'op-eb';
-	src:url("assets/font/OpenSans-ExtraBold.ttf") fomrmat("trutype");
+	src:url("../assets/font/OpenSans-ExtraBold.ttf") format("truetype");
 }
 
 @font-face{
 	font-family: 'op-ebi';
-	src:url("assets/font/OpenSans-ExtraBoldItalic.ttf") fomrmat("trutype");
+	src:url("../assets/font/OpenSans-ExtraBoldItalic.ttf") format("truetype");
 }
 
 @font-face{
 	font-family: 'op-i';
-	src:url("assets/font/OpenSans-Italic.ttf") fomrmat("trutype");
+	src:url("../assets/font/OpenSans-Italic.ttf") format("truetype");
 }
 
 @font-face{
 	font-family: 'op-l';
-	src:url("assets/font/OpenSans-Light.ttf") fomrmat("trutype");
+	src:url("font/OpenSans-Light.ttf") format("truetype");
 }
 
 @font-face{
 	font-family: 'op-li';
-	src:url("assets/font/OpenSans-LightItalic.ttf") fomrmat("trutype");
+	src:url("../assets/font/OpenSans-LightItalic.ttf") format("truetype");
 }
 
 @font-face{
 	font-family: 'op-r';
-	src:url("assets/font/OpenSans-Regular.ttf") fomrmat("trutype");
+	src:url("../assets/font/OpenSans-Regular.ttf") format("truetype");
 }
 
 @font-face{
 	font-family: 'op-sb';
-	src:url("assets/font/OpenSans-Semibold.ttf") fomrmat("trutype");
+	src:url("../assets/font/OpenSans-Semibold.ttf") format("truetype");
 }
 
 @font-face{
 	font-family: 'op-sbi';
-	src:url("assets/font/OpenSans-SemiboldItalic.ttf") fomrmat("trutype");
+	src:url("../assets/font/OpenSans-SemiboldItalic.ttf") format("truetype");
 }
 
 
 
 
-//font
+font
 .op-b{
 	font-family: 'ob-b';
 }
@@ -131,7 +131,9 @@ ul{
 }
 
 
-
+// body{
+// 	font-family: 'op-b';
+// }
 
 .nc{
 	color:#b2b2b2;
@@ -167,13 +169,72 @@ ul{
 }
 
 
-.menu{
+.menus{
 	height: 50px;
 }
 
 .clear{
 	clear:both;
 }
+
+
+
+.ctnav{
+	li{
+		overflow: hidden;
+		position: relative;
+	}
+	li:hover{
+		.gach{
+			div.g1{
+				transform:translateX(0px);
+				transition:all 0.5s;
+			}
+			div.g2{
+				transform:translateX(0px);
+				transition:all 0.5s;
+			}
+		}
+	}
+	li.active{
+		.gach{
+			div.g1{
+				transform:translateX(0px);
+				transition:all 0.5s;
+			}
+			div.g2{
+				transform:translateX(0px);
+				transition:all 0.5s;
+			}
+		}
+	}
+}
+.gach{
+	height: 5px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	flex-direction:row;
+	div.g1{
+
+		width: 50%;
+		height: 3px;
+		background: #636363;
+		transform:translateX(-100px);
+		transition:all 0.5s;
+	}
+	div.g2{
+		width: 50%;
+		height: 3px;
+		background: @clbut;
+		transform:translateX(100px);
+		transition:all 0.5s;
+	}
+}
+
+
+
 .home{
 	height: 450px;
 	width: auto;
@@ -191,7 +252,7 @@ ul{
 
 		}
 		button{
-			margin-top:115px;
+			margin-top:100px;
 			
 			width: 40px;
 			height: 40px;
@@ -244,6 +305,11 @@ ul{
 	padding-top: 100px;
 	padding-bottom: 100px;
 	>div{
+		ul{
+			li{
+				padding-top: 100px;
+			}
+		}
 		>div{
 			text-align: center;
 		}
@@ -253,6 +319,7 @@ ul{
 				p{
 					text-align: center;
 					i{
+
 						width: 80px;
 						height: 80px;
 						border: 2px solid @clbut;
@@ -276,8 +343,8 @@ ul{
 
 
 .someof{
-	height: 500px;
-	padding-top:100px;
+	height: 600px;
+	padding-top:80px;
 	padding-bottom: 100px;
 	background: #222222;
 	>div{
@@ -360,6 +427,25 @@ ul{
 
 }
 
+button.button.upcase.f18.op-sb.is-checked{
+	border-top: 0px;
+    border-left: 2px;
+    border-bottom: 0;
+    background: #fff;
+}
+button.button.upcase.f18.op-l{
+	border-top: 0px;
+    border-left: 2px;
+    border-bottom: 0;
+    background: #fff;
+}
+button.button.upcase.f18.op-sb {
+    border-top: 0px;
+    border-left: 2px;
+    border-bottom: 0;
+    background: #fff;
+}
+
 
 .father{
 	position: relative;
@@ -396,6 +482,7 @@ p.op-r.f18.upcase{
 
 						}
 						input{
+							height: 45px;
 							border:1px solid #999999;
 							width: 100%;
 						}
@@ -429,7 +516,7 @@ footer{
 					justify-content:flex-end;
 					i{
 						text-align: center;
-						padding-top: 9px;
+						padding-top: 10px;
 						width: 40px;
 						height: 40px;
 						border:1px solid #fff;
