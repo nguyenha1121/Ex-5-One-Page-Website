@@ -221,14 +221,14 @@ font
 		width: 50%;
 		height: 3px;
 		background: #636363;
-		transform:translateX(-100px);
+		transform:translateX(-1000px);
 		transition:all 0.5s;
 	}
 	div.g2{
 		width: 50%;
 		height: 3px;
 		background: @clbut;
-		transform:translateX(100px);
+		transform:translateX(1000px);
 		transition:all 0.5s;
 	}
 }
@@ -287,10 +287,18 @@ font
 	padding-bottom:100px;
 	background: @clbg;
 	>div{
+		div.titles{
+			margin-bottom: 100px;
+		}
 
 		>div{
 			text-align: center;
 		}
+		>div{
+				div.item{
+					padding-bottom: 40px;
+				}
+			}
 
 	}
 }
@@ -344,7 +352,7 @@ font
 
 .someof{
 	height: 600px;
-	padding-top:80px;
+	// padding-top:80px;
 	padding-bottom: 100px;
 	background: #222222;
 	>div{
@@ -359,6 +367,13 @@ font
 	}
 }
 
+.owl-item{
+	.item{
+		p{
+			text-align: center;
+		}
+	}
+}
 .owl-theme .owl-controls .owl-page span {
 	border-radius: 0;
 }
@@ -567,3 +582,87 @@ footer{
 	text-align: center;
 }
 
+
+//reposive
+
+
+@media (max-width:320px){
+	section{
+	padding-bottom: 50px;
+	padding-top: 50px;
+	}
+	.home{
+		>div{
+			p.p1{
+				margin-top: 35px!important;
+			}
+		}
+	}
+	.about{
+
+	}
+
+	.meetourteam{
+		>div{
+		div.titles{
+			margin-bottom: 50px;
+		}
+		>div{
+				div.item{
+					padding-bottom: 30px;
+				}
+			}
+		}
+	}
+	.takealook{
+		padding-bottom: 50px;
+		>div{
+			ul{
+				li{
+					padding-top: 50px;
+				}
+			}
+		}
+	}
+
+}
+@media (max-width:1024px) and (min-width:321px){
+	section{
+	padding-bottom: 70px;
+	padding-top: 70px;
+	}
+	.home{
+		>div{
+			p.p1{
+				margin-top: 68px!important;
+			}
+		}
+	}
+	.about{
+
+	}
+	.meetourteam{
+		>div{
+			div.titles{
+				margin-bottom: 70px;
+			}
+			>div{
+				div.item{
+					padding-bottom: 40px;
+				}
+			}
+		}
+	}
+	.takealook{
+		padding-bottom: 50px;
+		>div{
+			ul{
+				li{
+					padding-top: 30px;
+				}
+			}
+		}
+	}
+
+
+}
